@@ -1,6 +1,6 @@
 # Dockerfile for building NetXMS server image
 
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
     apt-get update && \
